@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-3xl font-bold mb-2
+    }
+
+    input{
+        @apply border border-black py-1 rounded-sm
+    }
+
+    .btn{
+        @apply border px-4 py-1 m-1 rounded-md
+    }
+}
+
+@layer components{
+    .btn-primary{
+        @apply bg-blue-400
+    }
+
+    .btn:hover{
+        @apply transition bg-blue-300 delay-75
+    }
+}

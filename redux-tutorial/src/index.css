@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-3xl font-bold mb-2
+    }
+
+    input{
+        @apply border border-black py-1 rounded-sm
+    }
+
+    .btn{
+        @apply border px-4 py-1 m-1 rounded-md
+    }
+
+    .loading-area{
+        @apply w-[200px] mx-auto flex
+    }
+
+    .loading-area p{
+        @apply font-bold text-xl mt-3 ml-2
+    }
+
+    .loading-icon{
+        @apply animate-spin text-center mt-3 w-[30px] h-[30px]
+    }
+}
+
+@layer components{
+    .btn-primary{
+        @apply bg-blue-400
+    }
+
+    .btn:hover{
+        @apply transition bg-blue-300 delay-75
+    }
+}
